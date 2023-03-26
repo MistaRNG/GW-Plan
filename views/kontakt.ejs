@@ -1,0 +1,71 @@
+<%- include("partials/header"); -%>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="headline display-4">Kontakt zu GW Plan</h1>
+  </div>
+</div>
+
+<div class="contact-box">
+<h3><span style="color: #154c91;"><strong>GW PLAN</strong></span> Ingenieurgesellschaft Gebäudetechnik GbR<br /> Gießerstraße 18<br /> 04229 Leipzig</h3>
+<h3>Telefon: +49 341 26 18 000<br />Telefax: +49 341 26 18 001</h3>
+<h3>E-Mail: <span id="cloak11776f21577386eeb2278d7a5dd8d144">Diese E-Mail-Adresse ist vor Spambots geschützt! Zur Anzeige muss JavaScript eingeschaltet sein!</span>
+  <script type='text/javascript'>
+    document.getElementById('cloak11776f21577386eeb2278d7a5dd8d144').innerHTML = '';
+    var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+    var path = 'hr' + 'ef' + '=';
+    var addy11776f21577386eeb2278d7a5dd8d144 = 'p&#111;st' + '&#64;';
+    addy11776f21577386eeb2278d7a5dd8d144 = addy11776f21577386eeb2278d7a5dd8d144 + 'gwpl&#97;n' + '&#46;' + 'd&#101;';
+    var addy_text11776f21577386eeb2278d7a5dd8d144 = 'p&#111;st' + '&#64;' + 'gwpl&#97;n' + '&#46;' + 'd&#101;';
+    document.getElementById('cloak11776f21577386eeb2278d7a5dd8d144').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy11776f21577386eeb2278d7a5dd8d144 + '\'>' + addy_text11776f21577386eeb2278d7a5dd8d144 + '<\/a>';
+  </script>
+</h3>
+<h2 class="contact-heading">So erreichen Sie uns.</h2>
+<p>Öffentliche Verkehrsmittel:</p><p>Tram 3 bis Haltestelle Leipzig, Markranstädter Straße</p><p>Tram 14 bis Haltestelle Leipzig, Karl-Heine-Straße / Gießerstraße</p><p>Bus 60 bis Haltestelle Leipzig, Naumburger Straße</p>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="contact-container">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdznVhxM-P9MSj6eCqLyaAfqsAydRYCP0"></script>
+    <script>
+      function initMap() {
+        // Koordinaten für den Standort festlegen
+        var location = {lat: 51.3274969, lng: 12.326444};
+        
+        // Karte erstellen und an das HTML-Element mit der ID "map" binden
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15.54,
+          center: location
+        });
+        
+        // Marker erstellen und an die Karte binden
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+      }
+    </script>
+    <div id="map" style="height: 100%"></div>
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div class="contact-container">
+      <h1 class="title">Kontaktiere uns</h1>
+      <div class="contact-form">
+        <h2 class="subtitle">Wir sind da um zu helfen.</h2>
+        <form action="https://formsubmit.co/mymail@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Name*" required />
+          <input type="hidden" name="_next" value="http://localhost:3000/thankyou">
+          <input type="email" name="email _replyto" placeholder="E-mail Adresse*" required />
+          <input type="tel" name="phone" placeholder="Telefonnummer" />
+          <textarea name="text" id="" rows="8" placeholder="Nachricht*" required></textarea>
+          <button class="btn-send" type="submit">Absenden &nbsp<span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+        </form>
+      </div>
+      <p class="contact-footnote">Felder die mit einem Stern (*) gekennzeichnet sind, müssen ausgefüllt werden.</p>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

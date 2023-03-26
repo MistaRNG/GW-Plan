@@ -1,0 +1,637 @@
+/*-------------------------- Global Styles------------------------------------- */
+
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rubik', sans-serif;
+}
+
+p{
+  font-size: 18px;
+}
+
+hr{
+  height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.img-fluid {
+ max-width: 100%;
+ height: auto;
+ }
+
+.bg-img{
+  z-index: -1;
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+}
+
+.navbar{
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand{
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.navbar-toggler{
+  position: absolute;
+  right: 50px;
+  padding: 2px 0;
+  border: 0;
+  height: 45px;
+  width: 45px;
+  background-color: #222;
+}
+
+.navbar-toggler img{
+  border: 1px solid gray;
+  border-radius: 8%;
+  background-color: #222;
+  padding: 0;
+  height: 45px;
+  width: 45px;
+}
+
+.page-body{
+  background: #eee;
+  background-image: url("/images/cubes.png");
+  border-radius: 5%;
+  z-index: 1;
+  padding: 0 5% 15%;
+  min-height: 100vh;
+}
+
+.footer {
+  text-align: center;
+  padding: 2%;
+  color: white;
+}
+
+/*-------------------------- Homepage------------------------------------- */
+
+@media (max-width: 768px){
+.row .homepage-headline {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width:768px){
+  .first-price-jumbotron{
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width:768px){
+  .first-price-jumbotron h1{
+    font-size: 2.3rem;
+    padding-bottom: 0;
+  }
+}
+
+.headline{
+  padding-top: 10%;
+}
+
+.homepage-headline{
+  font-size: 7.5rem;
+}
+
+.logo{
+  height: 160px;
+  width:  160px;
+  margin-left: 20px;
+}
+
+.home-img{
+  width: 100%;
+  display: block;
+  border: 1px solid gray;
+  border-radius: 2%;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+  background: white;
+  border-radius: 5px;
+}
+
+.news-headline{
+  padding-top: 7%;
+}
+
+.news-heading{
+  padding-top: 7%;
+}
+
+.news-subheading{
+  padding-top: 1%;
+}
+
+.readmore{
+  white-space: normal;
+  background-color: #333;
+  margin: 2% 0;
+}
+
+.readmore:hover{
+  background-color: #555;
+}
+
+.first-price-heading{
+  padding: 3% 0;
+}
+
+.price-img{
+  border: 2px solid gray;
+  border-radius: 1%;
+}
+
+.vds-heading{
+  padding: 5% 0;
+}
+
+.vds-container{
+  padding:3% 0;
+  font-size: 20px;
+}
+
+.vds-container p{
+  padding:2% 0;
+}
+
+.vds-entry{
+  margin-left: 3%;
+  font-weight: bold;
+}
+
+.vds-contact{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*-------------------------- Buero------------------------------------- */
+
+.buero-heading-styling{
+  padding: 5% 0;
+  text-align: center;
+}
+
+.mitarbeiter-img{
+  width: 100%;
+  height: 200px;
+  display: block;
+  border: 1px solid gray;
+  box-shadow: 0 5px 50px rgba(0,0,0,.85);
+;
+  background: white;
+  border-radius: 5px;
+}
+
+.bg-tablehead{
+  background-color: #292b2c;
+  color: white;
+}
+
+.table-background{
+  background-color: white;
+}
+
+/*-------------------------- Leistungen------------------------------------- */
+
+.leistung-second-heading{
+  font-size: 26px;
+}
+
+.table-box{
+  padding: 0;
+  margin: 0;
+}
+
+.table-offerings{
+  margin: 0;
+}
+
+.table-offerings .list-group-item{
+  border-radius: 0;
+}
+
+.table-offerings li{
+  background-color: #30475E;
+  color: white;
+}
+
+.last-item{
+  width: 100%;
+  background-color: #30475E;
+  color: white;
+}
+
+.customer{
+  display: inline-block;
+}
+
+/*-------------------------- Referenzen------------------------------------- */
+
+.references-paragraph{
+  font-size: 20px;
+  padding: 0 2%;
+  text-align: center;
+}
+
+.references{
+  padding: 10% 1%;
+  text-align: center;
+}
+
+.references-box{
+  padding: 4% auto;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.card {
+  margin: auto;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 50px rgba(0,0,0,.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: #141E30;
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);
+  background: linear-gradient(to top, #243B55, #141E30);
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+
+.card:before img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  border-radius: 50%;
+}
+
+.card .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.card .img span {
+  width: 25%;
+  height: 100%;
+  background-image: url(/images/commercial-buildings.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: .5s;
+}
+
+.card .img span:nth-child(1) {
+  background-position: 0;
+  transition-delay: 0;
+}
+
+.card .img span:nth-child(2) {
+  background-position: 33.33333%;
+  transition-delay: .1s;
+}
+
+.card .img span:nth-child(3) {
+  background-position: 66.66666%;
+  transition-delay: .2s;
+}
+
+.card .img span:nth-child(4) {
+  background-position: 100%;
+  transition-delay: .3s;
+}
+
+.card:hover .img > span {
+  transform: translateY(-100%);
+}
+
+.card:hover .content {
+  transform: translateY(0%);
+  transition: 1s;
+  transition-delay: .1s;
+}
+
+.content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px 20px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+
+
+.card2 {
+  margin: auto;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 50px rgba(0,0,0,.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: #141E30;
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);
+  background: linear-gradient(to top, #243B55, #141E30);
+}
+
+.card2:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+
+.card2 .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.card2 .img span {
+  width: 25%;
+  height: 100%;
+  background-image: url(/images/public-buildings.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: .5s;
+}
+
+.card2 .img span:nth-child(1) {
+  background-position: 0;
+  transition-delay: 0;
+}
+
+.card2 .img span:nth-child(2) {
+  background-position: 33.33333%;
+  transition-delay: .1s;
+}
+
+.card2 .img span:nth-child(3) {
+  background-position: 66.66666%;
+  transition-delay: .2s;
+}
+
+.card2 .img span:nth-child(4) {
+  background-position: 100%;
+  transition-delay: .3s;
+}
+
+.card2:hover .img > span {
+  transform: translateY(-100%);
+}
+
+.card2:hover .content {
+  transform: translateY(0%);
+  transition: 1s;
+  transition-delay: .1s;
+}
+
+
+
+
+.card3 {
+  margin: auto;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 50px rgba(0,0,0,.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: #141E30;
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);
+  background: linear-gradient(to top, #243B55, #141E30);
+}
+
+.card3:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+
+.card3 .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.card3 .img span {
+  width: 25%;
+  height: 100%;
+  background-image: url(/images/private-buildings.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: .5s;
+}
+
+.card3 .img span:nth-child(1) {
+  background-position: 0;
+  transition-delay: 0;
+}
+
+.card3 .img span:nth-child(2) {
+  background-position: 33.33333%;
+  transition-delay: .1s;
+}
+
+.card3 .img span:nth-child(3) {
+  background-position: 66.66666%;
+  transition-delay: .2s;
+}
+
+.card3 .img span:nth-child(4) {
+  background-position: 100%;
+  transition-delay: .3s;
+}
+
+.card3:hover .img > span {
+  transform: translateY(-100%);
+}
+
+.card3:hover .content {
+  transform: translateY(0%);
+  transition: 1s;
+  transition-delay: .1s;
+}
+
+.references-img-title{
+  padding: 5% 0;
+}
+
+/*-------------------------- Kontakt------------------------------------- */
+
+.contact-heading{
+  padding: 2% 0;
+}
+
+.contact-container {
+  background: #FFFFFF;
+  width: 100%;
+  height: 650px;
+  margin: 5% auto;
+  position: relative;
+}
+.contact-container .map {
+  width: 45%;
+  float: left;
+}
+
+.contact-container .contact-form {
+  width: 53%;
+  margin-left: 2%;
+  float: left;
+}
+
+.contact-container .contact-form .title {
+  font-size: 2.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #242424;
+  margin: 5% 8%;
+}
+
+.contact-container .contact-form .subtitle {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0 4% 5% 8%;
+}
+
+.contact-container .contact-form input,
+.contact-container .contact-form textarea {
+  width: 125%;
+  padding: 3%;
+  margin: 2% 8%;
+  color: #242424;
+  border: 1px solid #B7B7B7;
+}
+
+.contact-container .contact-form input::placeholder,
+.contact-container .contact-form textarea::placeholder {
+  color: #242424;
+}
+
+.contact-container .contact-form .btn-send {
+  background: #A383C9;
+  width: 180px;
+  height: 60px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 2% 8%;
+  border: none;
+}
+
+.contact-footnote{
+  display: inline-block;
+  padding: 8% 7% 0;
+  font-size: 12px;
+}
+
+.contact-box{
+  padding-left: 5%;
+}
+
+@media (max-width: 768px){
+.contact-box h3 {
+    font-size: 18px;
+  }
+}
+
+.title{
+  padding:6% 6% 0 6%;
+}
+
+/*-------------------------- Impressum/Datenschutz------------------------------------- */
+
+@media (max-width:995px){
+  .disclaimer-jumbotron h1{
+    font-size: 4rem;
+  }
+}
+
+@media (max-width:768px){
+  .disclaimer-jumbotron h1{
+    font-size: 2.4rem;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width:768px){
+  .disclaimer-jumbotron{
+    padding-bottom: 0;
+  }
+}
+
+.impressum-heading{
+  padding: 8% 0 3% 0%;
+}
+
+.disclaimer-li{
+  margin-left: 3%;
+}
